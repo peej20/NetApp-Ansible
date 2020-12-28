@@ -57,7 +57,7 @@ vservername: SVM1
 nfsvolsize2: 10 # Size is in GB
 
 # Variables: for '06_mount_nfs_datastore.yml'
-vcenter_server: 192.168.1.104
-vcenter_user: ansible@vsphere.local
-vcenter_pass: Password123
-voltype: nfs
+#vcenter_server: 192.168.1.1
+#vcenter_user: users@host.local
+#vcenter_pass: blabla123
+#voltype: nfs
