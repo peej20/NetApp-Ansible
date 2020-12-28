@@ -9,12 +9,12 @@ pass: Netapp11
 https_option: true
 validate_certs_option: false
 
-# Variables for '01_install_licenses_setup_ntp.yml'
+# Variables for '01_Install_Licenses.yml'
 clustername: Netapp-sim
 ntpservers: 192.168.1.101
 timezone: Australia/Sydney
 
-# Variables for '02_create_aggregate.yml'
+# Variables for '02_Add_Aggregates.yml'
 aggrrootoldname: aggr0_CLUSTER96_01
 aggrrootnewname: aggr0_CLUSTER96_01_root
 aggrdataname: aggr1_CLUSTER96_01_data
@@ -34,7 +34,7 @@ nfsvolname1: NFS_vol1
 nfsaggr: aggr1_CLUSTER96_01_data
 nfsvolsize: 100 # Size is in GB
 
-# Variables for '04_network_setup.yml'
+# Variables for '04_Netwerk_Setup.yml'
 clustername: CLUSTER96
 vlan: 5 # NFS VLAN
 parentinterface: e0d # Interface where VLAN will be created
@@ -50,13 +50,13 @@ lifaddress: 192.168.2.51
 lifnetmask: 255.255.255.0
 vservername: SVM1
 
-# Variables for '05_create_volume.yml'
+# Variables for '05_Create_Volume.yml'
 aggr: aggr1_CLUSTER96_01_data
 nfsvolname2: NFS_vol2
 vservername: SVM1
 nfsvolsize2: 10 # Size is in GB
 
-# Variables: for '06_mount_nfs_datastore.yml'
+# Variables: for '06_mount_nfs_to_vmware.yml'
 #vcenter_server: 192.168.1.1
 #vcenter_user: users@host.local
 #vcenter_pass: blabla123
